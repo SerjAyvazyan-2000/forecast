@@ -1,0 +1,365 @@
+
+.header {
+    padding: 20px 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    transition: .3s;
+    will-change: transform;
+}
+
+.btn-register {
+    min-width: 156px;
+    width: 100%;
+}
+
+.header.moved {
+    padding: 5px 0;
+}
+
+.header.moved .header-body {
+    padding: 7px 12px;
+}
+
+.header-body {
+    padding: 14px 12px;
+    border-radius: 80px;
+    align-items: center;
+    background: var(--white);
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.08);
+    transition: .3s;
+}
+
+
+.header-logo {
+    max-width: 156px;
+    width: 100%;
+    display: flex;
+
+    margin-left: 12px;
+}
+
+.menu-list {
+    gap: 52px;
+}
+
+.menu-bg {
+    display: none;
+}
+
+.menu-list-link {
+    color: var(--black);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+    transition: .3s;
+
+}
+
+.btn-login {
+    border: 2px solid var(--black);
+    background: var(--white);
+    padding: 10px 26px;
+    border-radius: 80px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: center;
+    color: var(--black);
+    transition: .3s;
+
+
+}
+
+.btn-register {
+    min-height: 44px;
+    padding: 12px 30px;
+}
+
+.btn-login:hover {
+    color: var(--white);
+    background: var(--tertiary);
+    border: 2px solid transparent;
+
+}
+
+.logo-mobile {
+    display: none;
+}
+
+.menu-list-link:hover {
+    color: rgba(163, 48, 203, 1);
+}
+
+.header-actions {
+    gap: 8px;
+}
+
+.burger {
+    display: none;
+}
+
+.menu-content-mobile {
+    display: none;
+}
+
+.header-mobile-actions {
+    display: none;
+}
+
+
+@media (max-width: 1400px) {
+}
+
+@media (max-width: 1200px) {
+    .header {
+        position: fixed;
+    }
+
+    .menu-list {
+        gap: 32px;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .menu-bg {
+        background: #444444;
+        backdrop-filter: blur(6px);
+        position: fixed;
+        display: block;
+        top: -150%;
+        right: 0;
+        width: 100%;
+        z-index: -1;
+        transition: .3s;
+        height: 100vh;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .menu-bg.active {
+        top: 0;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .menu {
+        position: fixed;
+        right: 0;
+        top: -150%;
+        width: 100%;
+        height: 100%;
+        transition: .3s;
+        z-index: 3;
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+        gap: 10px;
+        border-radius: 28px;
+        background-image: url("../images/menuBg.webp");
+        background-size: cover;
+        background-color: var(--white);
+        background-position: center;
+        background-repeat: no-repeat;
+        max-width: 95%;
+        margin: 0 auto;
+        left: 50%;
+        transform: translate(-50%);
+
+    }
+
+    .menu-mobile-cnt {
+        width: 100%;
+        height: max-content;
+        padding: 24px 20px 30px 20px;
+        position: relative;
+
+    }
+
+
+    .menu.active {
+        top: 116px;
+        height: unset;
+    }
+
+
+    .menu-list {
+        flex-direction: column;
+        gap: 36px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 28px;
+
+    }
+
+
+    .burger {
+        width: 23px;
+        height: 18px;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 3px;
+        border-radius: 100px;
+        cursor: pointer;
+        transition: .3s;
+        z-index: 4;
+    }
+
+    .header-body {
+        padding: 14px 20px;
+    }
+
+    .burger span {
+        width: 100%;
+        display: block;
+        height: 2.3px;
+        background: var(--black);
+        transition: .3s;
+        border-radius: 5px;
+
+    }
+
+    .burger::after {
+        width: 100%;
+        content: '';
+        display: block;
+        height: 2.3px;
+        background: var(--black);
+        transition: .3s;
+        border-radius: 5px;
+
+    }
+
+    .burger::before {
+        width: 100%;
+        content: '';
+        display: block;
+        height: 2.5px;
+        background: var(--black);
+        transition: .3s;
+        border-radius: 5px;
+
+    }
+
+
+    .burger.active span {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .burger.active::before {
+        transform: rotate(-45deg);
+        top: 9px;
+        position: relative;
+        height: 1.5px;
+
+
+    }
+
+    .header-mobile-actions {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin: 68px auto 0;
+        max-width: 292px;
+        width: 100%;
+    }
+
+
+    .burger.active::after {
+        transform: rotate(45deg);
+        bottom: 7px;
+        height: 1.5px;
+        position: relative;
+    }
+
+    .menu-content-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .menu-mobile-header {
+        position: relative;
+        z-index: 2;
+    }
+    .menu-mobile-line{
+        position: absolute;
+        top: 20px;
+        left: 50px;
+        z-index: -1;
+    }
+
+    .menu-mobile-title {
+        font-family: 'Manrope',sans-serif;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 26px;
+        text-align: center;
+        color: var(--black);
+    }
+
+
+
+    .header-actions {
+        display: none;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 576px) {
+    .header {
+        padding: 16px 0;
+    }
+
+    .logo-desktop {
+        display: none;
+    }
+
+    .logo-mobile {
+        display: block;
+    }
+
+    .menu {
+        max-width: 332px;
+    }
+
+    .menu-mobile-cnt {
+
+    }
+
+    .menu.active {
+        top: 88px;
+    }
+
+
+    .header-body {
+        padding: 16px 20px;
+    }
+    .header.moved .header-body {
+        padding: 7px 20px;
+    }
+    .header-logo {
+        max-width: 124px;
+    }
+
+    .header .container {
+        padding: 0 14px;
+    }
+
+}
