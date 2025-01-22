@@ -8,8 +8,8 @@ let reviewsSwiper = new Swiper(".review-swiper", {
     loop:true,
 
     navigation: {
-        nextEl: '.reviews-slider-next',
-        prevEl: '.reviews-slider-prev',
+        nextEl: '.reviews-slider-prev',
+        prevEl: '.reviews-slider-next',
     },
     breakpoints: {
         320: {slidesPerView: 1,},
