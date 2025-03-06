@@ -165,7 +165,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
-    font-family: "Inter", serif;
-    background: var(--white);
+    font-family:'Myriad Pro';
+    background: var(--dark-blue);
 
 }

@@ -12,8 +12,22 @@
     -webkit-mask-position: center;
 }
 
-.icon-arrow {
+.icon-star{
+    mask-image: url(star.svg);
+    -webkit-mask-image: url(star.svg);
+}
+
+.icon-arrow{
     mask-image: url(arrow.svg);
     -webkit-mask-image: url(arrow.svg);
 }
+.icon-arrowUp{
+    mask-image: url(arrowUp.svg);
+    -webkit-mask-image: url(arrowUp.svg);
+}
 
+
+.icon-flower{
+    mask-image: url(iconFlower.svg);
+    -webkit-mask-image: url(iconFlower.svg);
+}

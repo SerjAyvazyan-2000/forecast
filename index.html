@@ -5,11 +5,8 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Forecast</title>
+    <title>Voice acting</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Prata&display=swap"
-          rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
 </head>
@@ -21,958 +18,703 @@
     <header class="header">
         <div class="container">
             <div class="header-body G-justify-between">
-                <a class="header-logo" href="index.html">
-                    <img class="logo-desktop" src="assets/images/logo.svg" alt="">
-                    <img class="logo-mobile" src="assets/images/logoMobile.svg" alt="">
+                <a class="header-logo G-flex" href="index.html">
+                    <img src="assets/images/logo.svg" alt="">
 
                 </a>
                 <div class="menu-bg"></div>
                 <nav class="menu">
-                    <div class="menu-mobile-cnt">
-                        <div class="menu-content-mobile G-flex-column">
+                    <ul class="menu-list G-flex">
+                        <li class='menu-list-item'>
+                            <a class="menu-list-link G-align-center" href="#possibilities">
+                                <span>Возможности</span>
+                            </a>
+                        </li>
 
-                            <div class="menu-mobile-header">
-                                <h3 class="menu-mobile-title">
-                                    Прогнозировать
-                                    <span class="text-wrap">с помощью нейросети</span>
-                                </h3>
-                                <div class="menu-mobile-line">
-                                    <img src="assets/images/line12.webp" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <ul class="menu-list G-flex">
-                            <li class='menu-list-item'>
-                                <a class="menu-list-link G-align-center" href="#possibilities">
-                                    <span>Возможности</span>
-                                </a>
-                            </li>
-
-                            <li class="menu-list-item">
-                                <a class="menu-list-link" href="#forecasting">Как работает</a>
-                            </li>
-                            <li class="menu-list-item">
-                                <a class="menu-list-link" href="#reviews">Отзывы</a>
-                            </li>
-                            <li class="menu-list-item">
-                                <a class="menu-list-link" href="#faq">FAQ</a>
-                            </li>
-                        </ul>
-                        <div class="header-mobile-actions ">
-                            <button class="btn-login">Вход</button>
-                            <button class="btn-register btn-black ">Регистрация бесплатно</button>
-                        </div>
+                        <li class="menu-list-item">
+                            <a class="menu-list-link" href="#howWork">Как работает</a>
+                        </li>
+                        <li class="menu-list-item">
+                            <a class="menu-list-link" href="#reviews">Отзывы</a>
+                        </li>
+                        <li class="menu-list-item">
+                            <a class="menu-list-link" href="#faq">FAQ</a>
+                        </li>
+                    </ul>
+                    <div class="header-mobile-actions ">
+                        <button class="btn-login">Вход</button>
+                        <button class="btn-register ">Регистрация</button>
                     </div>
-
                 </nav>
                 <div class="burger">
                     <span></span>
                 </div>
                 <div class="header-actions G-align-center">
-                    <button class="btn-login  ">Вход</button>
-                    <button class="btn-register btn-black  ">Регистрация бесплатно</button>
+                    <button class="btn-login ">Вход</button>
+                    <button class="btn-register ">Регистрация</button>
                 </div>
             </div>
         </div>
     </header>
     <main class="main">
+
         <section class="hero-section">
             <div class="container">
                 <div class="hero-body">
-                    <div class="hero-titles G-column-center">
+                    <div class="hero-titles">
+                        <!--                        <div class="mobile-languages G-align-center">-->
+
+                        <!--                            <div class="language-mobile  G-align-center">-->
+                        <!--                                <div class="language-flag G-flex">-->
+                        <!--                                    <img src="assets/images/flag1.webp" alt="">-->
+                        <!--                                </div>-->
+                        <!--                                <p class="language-name">English</p>-->
+                        <!--                            </div>-->
+
+                        <!--                            <div class="language-mobile  G-align-center">-->
+                        <!--                                <div class="language-flag G-flex">-->
+                        <!--                                    <img src="assets/images/flag2.webp" alt="">-->
+                        <!--                                </div>-->
+                        <!--                                <p class="language-name">Русский</p>-->
+                        <!--                            </div>-->
+
+                        <!--                            <div class="language-mobile  G-align-center">-->
+                        <!--                                <div class="language-flag G-flex">-->
+                        <!--                                    <img src="assets/images/flag3.webp" alt="">-->
+                        <!--                                </div>-->
+                        <!--                                <p class="language-name">Deutsch</p>-->
+                        <!--                            </div>-->
+
+                        <!--                            <div class="language-mobile  G-align-center">-->
+                        <!--                                <div class="language-flag G-flex">-->
+                        <!--                                    <img src="assets/images/flag4.webp" alt="">-->
+                        <!--                                </div>-->
+                        <!--                                <p class="language-name">हिन्दी</p>-->
+                        <!--                            </div>-->
+
+
+                        <!--                        </div>-->
                         <h1 class="hero-title">
-                            Прогнозировать
-                            <span class="text-wrap">с помощью нейросети</span>
+                            Озвучка текстов и видео <span class="text-wrap">с ChatGPT — как в жизни!</span>
                         </h1>
-                        <p class="hero-sub-title">
-                            Забудь про долгие поиски инфы —
-                            <span class="text-wrap">нейросеть выдаст готовый результат за пару минут</span>
+                        <p class="hero-text">
+
+                            <span class="mobile-text-wrap">Натуральная интонация, разные тембры</span> и акценты —
+                            <span class="desktop-text-wrap">идеально для видео, <span class="mobile-text-wrap">подкастов, книг и дикторской работы</span></span>
                         </p>
-                        <div class="hero-bnt-cnt">
-                            <button class="hero-bnt btn-black">Начать бесплатно</button>
+
+                        <div class="hero-btn btn-blueviolet G-align-center">
+                            <span>Начать бесплатно</span>
+
+                            <div class="btn-icon G-center">
+                                <i class="icon icon-arrowUp"></i>
+                            </div>
                         </div>
-                        <div class="hero-title-decor">
-                            <img src="assets/images/greenDecor.webp" alt="">
-                        </div>
+
+
                     </div>
+
                     <div class="hero-services G-align-center">
                         <div class="hero-service">
-                            <div class="hero-service-title G-align-end">
-                                <p>от</p>
-                                <span>96%</span>
+                            <h2 class="hero-service-title">98%</h2>
+                            <p class="hero-service-text">точность распознавания речи</p>
 
-                                <div class="service-line">
-                                    <img src="assets/images/line1.webp" alt="">
-                                </div>
+                            <div class="hero-dots G-align-center">
+                                <div class="hero-dot dark-dot"></div>
+                                <div class="hero-dot"></div>
+                                <div class="hero-dot"></div>
+
                             </div>
-                            <div class="hero-service-cnt">
-                                <h3 class="service-sub-title">
-                                    Точность прогнозов
-                                </h3>
-                                <p class="service-text">
-                                    Нейросеть предсказывать тенденции <span class="desktop-text-wrap">и события с высокой точностью</span>
-                                </p>
-                            </div>
-
-
                         </div>
 
                         <div class="hero-service">
-                            <div class="hero-service-title G-align-end">
-                                <span>2</span>
-                                <p>мин.</p>
-                                <div class="service-line">
-                                    <img src="assets/images/line2.webp" alt="">
-                                </div>
-                            </div>
-                            <div class="hero-service-cnt">
-                                <h3 class="service-sub-title">
-                                    Обработка запроса
-                                </h3>
-                                <p class="service-text">
-                                    Получай ценные инсайты и повышай эффективность своих действий
-                                </p>
-                            </div>
+                            <h2 class="hero-service-title">50+</h2>
+                            <p class="hero-service-text">языков для перевода и озвучки</p>
 
+                            <div class="hero-dots G-align-center">
+                                <div class="hero-dot dark-dot"></div>
+                                <div class="hero-dot dark-dot"></div>
+                                <div class="hero-dot"></div>
 
+                            </div>
                         </div>
 
                         <div class="hero-service">
-                            <div class="hero-service-title G-align-end">
-                                <span>>10</span>
-                                <p>млн.</p>
-                                <div class="service-line">
-                                    <img src="assets/images/line3.webp" alt="">
-                                </div>
+                            <h2 class="hero-service-title">80%</h2>
+                            <p class="hero-service-text">экономии времени на создание субтитров</p>
+
+                            <div class="hero-dots G-align-center">
+                                <div class="hero-dot dark-dot"></div>
+                                <div class="hero-dot dark-dot"></div>
+                                <div class="hero-dot dark-dot"></div>
+
                             </div>
-                            <div class="hero-service-cnt">
-                                <h3 class="service-sub-title">
-                                    Обработанных данных
-                                </h3>
-                                <p class="service-text">
-                                    Нейросеть обучена на основе Big Data для высокой точности прогнозов
-                                </p>
+                        </div>
+                    </div>
+
+                    <!--                    <div class="hero-language language&#45;&#45;one G-align-center">-->
+                    <!--                        <div class="language-flag G-flex">-->
+                    <!--                            <img src="assets/images/flag1.webp" alt="">-->
+                    <!--                        </div>-->
+                    <!--                        <p class="language-name">English</p>-->
+                    <!--                    </div>-->
+
+                    <!--                    <div class="hero-language language&#45;&#45;two G-align-center">-->
+                    <!--                        <div class="language-flag G-flex">-->
+                    <!--                            <img src="assets/images/flag2.webp" alt="">-->
+                    <!--                        </div>-->
+                    <!--                        <p class="language-name">Русский</p>-->
+                    <!--                    </div>-->
+
+                    <!--                    <div class="hero-language language&#45;&#45;tree G-align-center">-->
+                    <!--                        <div class="language-flag G-flex">-->
+                    <!--                            <img src="assets/images/flag3.webp" alt="">-->
+                    <!--                        </div>-->
+                    <!--                        <p class="language-name">Deutsch</p>-->
+                    <!--                    </div>-->
+
+                    <!--                    <div class="hero-language language&#45;&#45;for G-align-center">-->
+                    <!--                        <div class="language-flag G-flex">-->
+                    <!--                            <img src="assets/images/flag4.webp" alt="">-->
+                    <!--                        </div>-->
+                    <!--                        <p class="language-name">हिन्दी</p>-->
+                    <!--                    </div>-->
+
+
+                </div>
+            </div>
+
+            <div class="hero-decor G-flex">
+                <img class="img-desktop" src="assets/images/heroDecor.webp" alt="">
+                <img class="img-mobile" src="assets/images/heroDecorMobile.webp" alt="">
+
+            </div>
+        </section>
+
+
+        <section id="possibilities" class="opportunities-section">
+            <div class="container">
+                <div class="opportunities-body block-body">
+                    <h2 class="section-title">
+                        <span class="mobile-text-wrap">Голос, который</span> меняет <span class="desktop-text-wrap">правила игры</span>
+                    </h2>
+                    <p class="section-text">
+                        Используйте мощь нейросети для создания <span
+                            class="text-wrap">живой и выразительной озвучки</span>
+                    </p>
+
+                    <div class="opportunities-items G-flex-column block-cnt">
+                        <div class="opportunities-item G-flex">
+                            <div class="opportunities-item-img G-flex">
+                                <img src="assets/images/opportunitiesImg.webp" alt="">
                             </div>
 
+                            <a href="" class="opportunities-item-info">
+                                <h3 class="block-title">Озвучивание видео</h3>
+                                <p class="block-text">Нейросеть преобразует текст в живую речь, <span class="text-wrap">идеально подстраиваясь под темп и эмоции</span>
+                                </p>
+
+                                <div class="opportunities-tags orders-tags--one small-cnt G-flex">
+
+                                    <div class="opportunities-tag G-align-center">
+                                        <i class="icon icon-flower"></i>
+                                        <p>Лекции и курсы</p>
+                                    </div>
+
+
+                                    <div class="opportunities-tag G-align-center">
+                                        <i class="icon icon-flower"></i>
+                                        <p>YouTube и соцсети</p>
+                                    </div>
+
+
+                                    <div class="opportunities-tag G-align-center">
+                                        <i class="icon icon-flower"></i>
+                                        <p>Презентации и вебинары</p>
+                                    </div>
+
+                                    <div class="opportunities-tag G-align-center">
+                                        <i class="icon icon-flower"></i>
+                                        <p>Фильмы и интервью</p>
+                                    </div>
+
+                                </div>
+
+                                <div class="opportunities-arrow">
+                                    <img src="assets/images/btIcon.svg" alt="">
+                                </div>
+
+                            </a>
 
                         </div>
+
+
+                        <div class="opportunities-item opportunities-item-reverse G-flex">
+
+
+                            <a href="" class="opportunities-item-info">
+                                <h3 class="block-title">Озвучивание документов</h3>
+                                <p class="block-text">
+                                    Слушайте текст, а не читайте — удобно, <span class="desktop-text-wrap">быстро, <span
+                                        class="mobile-text-wrap">доступно в любом месте</span></span>
+                                </p>
+
+                                <div class="opportunities-tags orders-tags--two big-cnt G-flex">
+
+                                    <div class="opportunities-tag  G-align-center">
+                                        <i class="icon icon-flower"></i>
+                                        <p>Книги и статьи</p>
+                                    </div>
+
+
+                                    <div class="opportunities-tag G-align-center">
+                                        <i class="icon icon-flower"></i>
+                                        <p>Инструкции и руководства</p>
+                                    </div>
+
+
+                                    <div class="opportunities-tag G-align-center">
+                                        <i class="icon icon-flower"></i>
+                                        <p>Контракты и юридические документы</p>
+                                    </div>
+
+                                    <div class="opportunities-tag G-align-center">
+                                        <i class="icon icon-flower"></i>
+                                        <p>Деловые отчёты</p>
+                                    </div>
+
+                                </div>
+
+                                <div class="opportunities-arrow">
+                                    <img src="assets/images/btIcon.svg" alt="">
+                                </div>
+
+                            </a>
+
+                            <div class="opportunities-item-img G-flex">
+                                <img src="assets/images/opportunitiesImg3.webp" alt="">
+                            </div>
+
+                        </div>
+
+                        <div class="opportunities-item G-flex">
+                            <div class="opportunities-item-img G-flex">
+                                <img src="assets/images/opportunitiesImg2.webp" alt="">
+                            </div>
+
+                            <a href="" class="opportunities-item-info">
+                                <h3 class="block-title">Закадровый перевод</h3>
+                                <p class="block-text">
+                                    Озвучьте контент на любом языке, сохранив
+                                    <span class="text-wrap">смысл и эмоции оригинального произведения</span>
+                                </p>
+
+                                <div class="opportunities-tags orders-tags--tree  G-flex">
+
+                                    <div class="opportunities-tag G-align-center">
+                                        <i class="icon icon-flower"></i>
+                                        <p>Видеоуроки и лекции</p>
+                                    </div>
+
+
+                                    <div class="opportunities-tag G-align-center">
+                                        <i class="icon icon-flower"></i>
+                                        <p>YouTube и соцсети</p>
+                                    </div>
+
+
+                                    <div class="opportunities-tag G-align-center">
+                                        <i class="icon icon-flower"></i>
+                                        <p>Документальные фильмы и интервью</p>
+                                    </div>
+
+                                    <div class="opportunities-tag G-align-center">
+                                        <i class="icon icon-flower"></i>
+                                        <p>Корпоративные видео</p>
+                                    </div>
+
+                                </div>
+
+                                <div class="opportunities-arrow">
+                                    <img src="assets/images/btIcon.svg" alt="">
+                                </div>
+
+                            </a>
+
+                        </div>
+
+
+                        <!--                        <div class="opportunities-item G-flex">-->
+
+                        <!--                            <a href="" class="opportunities-item-info">-->
+                        <!--                                <h3 class="block-title">Дублированный перевод на базе ИИ</h3>-->
+                        <!--                                <p class="block-text">-->
+                        <!--                                    Озвучьте контент на любом языке, сохранив <span class="text-wrap">смысл и эмоции оригинального произведения</span>-->
+                        <!--                                </p>-->
+
+                        <!--                                <div class="opportunities-tags big-cnt G-flex">-->
+
+                        <!--                                    <div class="opportunities-tag G-align-center">-->
+                        <!--                                        <i class="icon icon-flower"></i>-->
+                        <!--                                        <p>Видеоуроки и лекции</p>-->
+                        <!--                                    </div>-->
+
+
+                        <!--                                    <div class="opportunities-tag G-align-center">-->
+                        <!--                                        <i class="icon icon-flower"></i>-->
+                        <!--                                        <p>YouTube и соцсети</p>-->
+                        <!--                                    </div>-->
+
+
+                        <!--                                    <div class="opportunities-tag G-align-center">-->
+                        <!--                                        <i class="icon icon-flower"></i>-->
+                        <!--                                        <p>Документальные фильмы и интервью</p>-->
+                        <!--                                    </div>-->
+
+                        <!--                                    <div class="opportunities-tag G-align-center">-->
+                        <!--                                        <i class="icon icon-flower"></i>-->
+                        <!--                                        <p>Корпоративные видео</p>-->
+                        <!--                                    </div>-->
+
+                        <!--                                </div>-->
+
+                        <!--                                <div class="opportunities-arrow">-->
+                        <!--                                    <img src="assets/images/btIcon.svg" alt="">-->
+                        <!--                                </div>-->
+
+                        <!--                            </a>-->
+                        <!--                            <div class="opportunities-item-img G-flex">-->
+                        <!--                                <img src="assets/images/opportunitiesImg2.webp" alt="">-->
+                        <!--                            </div>-->
+
+                        <!--                        </div>-->
+
+                        <!--                        <div class="opportunities-item G-flex">-->
+                        <!--                            <a href="" class="opportunities-item-info">-->
+                        <!--                                <h3 class="block-title">Мульти-спикеры</h3>-->
+                        <!--                                <p class="block-text">-->
+                        <!--                                    Несколько спикеров в одном видео, разные-->
+                        <!--                                    <span class="text-wrap">по звучанию, тембру возрасту и полу</span>-->
+                        <!--                                </p>-->
+
+                        <!--                                <div class="opportunities-tags big-cnt G-flex">-->
+
+                        <!--                                    <div class="opportunities-tag G-align-center">-->
+                        <!--                                        <i class="icon icon-flower"></i>-->
+                        <!--                                        <p>Разные голоса</p>-->
+                        <!--                                    </div>-->
+
+
+                        <!--                                    <div class="opportunities-tag G-align-center">-->
+                        <!--                                        <i class="icon icon-flower"></i>-->
+                        <!--                                        <p>Мужские/женские</p>-->
+                        <!--                                    </div>-->
+
+
+                        <!--                                    <div class="opportunities-tag G-align-center">-->
+                        <!--                                        <i class="icon icon-flower"></i>-->
+                        <!--                                        <p>Голосовая идентификация</p>-->
+                        <!--                                    </div>-->
+
+                        <!--                                    <div class="opportunities-tag G-align-center">-->
+                        <!--                                        <i class="icon icon-flower"></i>-->
+                        <!--                                        <p>Разные тембры</p>-->
+                        <!--                                    </div>-->
+
+                        <!--                                </div>-->
+
+                        <!--                                <div class="opportunities-arrow">-->
+                        <!--                                    <img src="assets/images/btIcon.svg" alt="">-->
+                        <!--                                </div>-->
+
+                        <!--                            </a>-->
+                        <!--                            <div class="opportunities-item-img G-flex">-->
+                        <!--                                <img src="assets/images/opportunitiesImg4.webp" alt="">-->
+                        <!--                            </div>-->
+
+                        <!--                        </div>-->
+
+                        <!--                        <div class="opportunities-item G-flex">-->
+                        <!--                            <div class="opportunities-item-img G-flex">-->
+                        <!--                                <img src="assets/images/opportunitiesImg5.webp" alt="">-->
+                        <!--                            </div>-->
+
+                        <!--                            <a href="" class="opportunities-item-info">-->
+                        <!--                                <h3 class="block-title">Клонирование и перевод на 20+ языков</h3>-->
+                        <!--                                <p class="block-text">-->
+                        <!--                                    Разговаривайте со своей аудиторией своим голосом-->
+                        <!--                                    <span class="text-wrap">на 20+ языках, расширяйте географию-->
+                        <!--                                    своего продукта</span>-->
+                        <!--                                </p>-->
+
+                        <!--                                <div class="opportunities-tags small-cnt G-flex">-->
+
+                        <!--                                    <div class="opportunities-tag G-align-center">-->
+                        <!--                                        <i class="icon icon-flower"></i>-->
+                        <!--                                        <p>Интонация</p>-->
+                        <!--                                    </div>-->
+
+
+                        <!--                                    <div class="opportunities-tag G-align-center">-->
+                        <!--                                        <i class="icon icon-flower"></i>-->
+                        <!--                                        <p>Популярных и редкие языки</p>-->
+                        <!--                                    </div>-->
+
+
+                        <!--                                    <div class="opportunities-tag G-align-center">-->
+                        <!--                                        <i class="icon icon-flower"></i>-->
+                        <!--                                        <p>Сохранение тембра</p>-->
+                        <!--                                    </div>-->
+
+                        <!--                                    <div class="opportunities-tag G-align-center">-->
+                        <!--                                        <i class="icon icon-flower"></i>-->
+                        <!--                                        <p>Локализация контента</p>-->
+                        <!--                                    </div>-->
+
+                        <!--                                </div>-->
+
+                        <!--                                <div class="opportunities-arrow">-->
+                        <!--                                    <img src="assets/images/btIcon.svg" alt="">-->
+                        <!--                                </div>-->
+
+                        <!--                            </a>-->
+
+                        <!--                        </div>-->
+
+
+                        <!--                        <div class="opportunities-item G-flex">-->
+                        <!--                            <a href="" class="opportunities-item-info">-->
+                        <!--                                <h3 class="block-title">Субтитры</h3>-->
+                        <!--                                <p class="block-text">-->
+                        <!--                                    Вы можете скачать субтитры в формате SRT на оригинальном-->
+                        <!--                                    <span class="text-wrap">или целевом языке-->
+                        <!--                                    и использовать текст в своих целях</span>-->
+                        <!--                                </p>-->
+
+                        <!--                                <div class="opportunities-tags big-cnt G-flex">-->
+
+                        <!--                                    <div class="opportunities-tag G-align-center">-->
+                        <!--                                        <i class="icon icon-flower"></i>-->
+                        <!--                                        <p>Автоматическое создание</p>-->
+                        <!--                                    </div>-->
+
+
+                        <!--                                    <div class="opportunities-tag G-align-center">-->
+                        <!--                                        <i class="icon icon-flower"></i>-->
+                        <!--                                        <p>SRT, VTT</p>-->
+                        <!--                                    </div>-->
+
+
+                        <!--                                    <div class="opportunities-tag G-align-center">-->
+                        <!--                                        <i class="icon icon-flower"></i>-->
+                        <!--                                        <p>Синхронизация текста</p>-->
+                        <!--                                    </div>-->
+
+                        <!--                                    <div class="opportunities-tag G-align-center">-->
+                        <!--                                        <i class="icon icon-flower"></i>-->
+                        <!--                                        <p>Настройка шрифтов</p>-->
+                        <!--                                    </div>-->
+
+                        <!--                                </div>-->
+
+                        <!--                                <div class="opportunities-arrow">-->
+                        <!--                                    <img src="assets/images/btIcon.svg" alt="">-->
+                        <!--                                </div>-->
+
+                        <!--                            </a>-->
+                        <!--                            <div class="opportunities-item-img G-flex">-->
+                        <!--                                <img src="assets/images/opportunitiesImg6.webp" alt="">-->
+                        <!--                            </div>-->
+
+                        <!--                        </div>-->
+
 
                     </div>
                 </div>
             </div>
+
         </section>
 
-        <section class="trust-section section">
+
+        <section class="advantages-section">
             <div class="container">
-                <div class="trust-body">
-                    <div class="trust-header G-justify-between">
-                        <h2 class="trust-title block-title">
-                            Сэкономь время —
-                            <span class="text-wrap">доверяй нейросети</span>
-                        </h2>
-                        <p class="trust-sub-title">
-                            Забудь про дотошный анализ.
-                            <span class="desktop-text-wrap">Это больше не твоя проблема!</span>
-                        </p>
-                        <div class="trust-title-decor">
-                            <img src="assets/images/line4.webp" alt="">
-                        </div>
-                    </div>
+                <div class="advantages-body block-body">
+                    <h2 class="section-title">
+                        Качественный звук
+                        <span class="text-wrap">за секунды, а не часы</span>
+                    </h2>
+                    <p class="section-text">
+                        1 час видео вручную — 6 часов работы 
+                        <span class="text-wrap">1 час видео с нейросетью — 10 минут!</span>
+                    </p>
 
-                    <div class="trust-cnt">
-
-                        <div class="trust-main-picture">
-                            <img class="trust-desktop-img" src="assets/images/trustPicture.webp" alt="">
-                            <img class="trust-mobile-img" src="assets/images/trustPicturemobile.webp" alt="">
-
-                        </div>
-                        <div class="trust-mobile-heart">
-                            <img src="assets/images/heart3.webp" alt="">
-                        </div>
-                        <div class="trust-cards">
-                            <div class="trust-card  card--one G-align-center">
-                                <div class="trust-card-img">
-                                    <img src="assets/images/fire.webp" alt="">
-                                </div>
-                                <p class="trust-card-text">
-                                    Простая регистрация
-                                    без ограничений
-                                </p>
+                    <div class="advantages-items G-flex block-cnt">
+                        <div class="advantages-item ">
+                            <div class="advantages-icon G-flex">
+                                <img src="assets/images/advantagesIcon.svg" alt="">
                             </div>
-
-                            <div class="trust-card  card--two G-align-center">
-                                <div class="trust-card-img">
-                                    <img src="assets/images/flagRu.webp" alt="">
-                                </div>
-                                <p class="trust-card-text">
-                                    Полная поддержка
-                                    русского языка
-                                </p>
-                            </div>
-
-                            <div class="trust-card  card--tree G-align-center">
-                                <div class="trust-card-img">
-                                    <img src="assets/images/heart.webp" alt="">
-                                </div>
-                                <p class="trust-card-text">
-                                    Интуитивно понятный
-                                    интерфейс
-                                </p>
-                            </div>
-
-
-                            <div class="trust-card  card--for G-align-center">
-                                <div class="trust-card-img">
-                                    <img src="assets/images/rocket.webp" alt="">
-                                </div>
-                                <p class="trust-card-text">
-                                    Быстрые ответы
-                                    без очереди и пауз
-                                </p>
-                            </div>
-
-                            <div class="trust-card  card--five G-align-center">
-                                <div class="trust-card-img">
-                                    <img src="assets/images/star.webp" alt="">
-                                </div>
-                                <p class="trust-card-text">
-                                    Максимальная
-                                    точность ответа
-                                </p>
-                            </div>
-
-                            <div class="trust-card  card--six G-align-center">
-                                <div class="trust-card-img">
-                                    <img src="assets/images/eart.webp" alt="">
-                                </div>
-                                <p class="trust-card-text">
-                                    Доступ к сервису
-                                    без VPN
-                                </p>
-                            </div>
-                        </div>
-
-
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="possibilities" class="about-us-section section">
-            <div class="container">
-                <div class="about-us-body G-flex">
-                    <div class="about-us-titles G-flex-column">
-                        <div class="about-us-texts">
-                            <h2 class=" block-title">
-                                Умеет
-                                <span class="text-wrap">реально всё</span>
+                            <h2 class="advantages-item-title block-title">
+                                Быстрее, чем человек — <span class="text-blueviolet text-wrap">в 3 раза!</span>
                             </h2>
-                            <p class="about-sub-title trust-sub-title">
-                                Сервис даст прогноз на любую тему
-                                <span class="desktop-text-wrap"> быстрее, чем ты заваришь кофе</span>
+                            <p class="advantages-item-text block-text">
+                                Нейросеть справляется с задачами за минуты, а не часы.
+                                <span class="text-wrap">Один час видео обрабатывается
+                                всего за 10–15 минут,</span>
+                                позволяя экономить до 80% времени
                             </p>
                         </div>
 
-                        <div class="about-title-decor">
-                            <img src="assets/images/line5.webp" alt="">
-                        </div>
-                        <div class="about-btn-cnt">
-                            <button class="about-btn btn-black">Начать бесплатно</button>
-                        </div>
-                    </div>
 
-                    <div class="about-us-items G-flex-column">
-                        <div style="background-image: url('assets/images/aboutItemDecor.webp')"
-                             class="about-us-item G-image">
-
-                            <div class="about-item-texts G-flex-column">
-                                <div class="about-item-number blue-bg G-center">
-                                    01
-                                </div>
-                                <div class="about-item-infos">
-                                    <h3 class="about-item-title">Прогнозирование спроса</h3>
-                                    <p class="about-item-sub">Нейросеть может анализировать исторические данные
-                                        о продажах, сезонные колебания и маркетинговые активности для предсказания
-                                        будущего спроса на товары и услуги</p>
-                                </div>
+                        <div class="advantages-item ">
+                            <div class="advantages-icon G-flex">
+                                <img src="assets/images/advantagesIcon2.svg" alt="">
                             </div>
-
-                            <div class="about-item-img">
-                                <img src="assets/images/aboutItemImg1.webp" alt="">
-                            </div>
-                        </div>
-                        <div style="background-image: url('assets/images/aboutItemDecor.webp')"
-                             class="about-us-item G-image">
-
-                            <div class="about-item-texts G-flex-column">
-                                <div class="about-item-number black-bg G-center">
-                                    02
-                                </div>
-                                <div class="about-item-infos">
-                                    <h3 class="about-item-title">Финансовое прогнозирование</h3>
-                                    <p class="about-item-sub">
-                                        Использование нейросетей для анализа рыночных данных,
-                                        новостей и экономических индикаторов с целью предсказания цен на акции и валюты
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="about-item-img">
-                                <img src="assets/images/aboutItemImg2.webp" alt="">
-                            </div>
-                        </div>
-                        <div style="background-image: url('assets/images/aboutItemDecor.webp')"
-                             class="about-us-item G-image">
-
-                            <div class="about-item-texts G-flex-column">
-                                <div class="about-item-number white-bg G-center">
-                                    03
-                                </div>
-                                <div class="about-item-infos">
-                                    <h3 class="about-item-title">Результаты спортивных событий</h3>
-                                    <p class="about-item-sub">
-                                        Нейросеть может анализировать статистику команд,
-                                        игроков и других факторов для предсказания исходов
-                                        спортивных матчей и турниров
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="about-item-img">
-                                <img src="assets/images/aboutItemImg3.webp" alt="">
-                            </div>
-                        </div>
-                        <div style="background-image: url('assets/images/aboutItemDecor.webp')"
-                             class="about-us-item G-image">
-
-                            <div class="about-item-texts G-flex-column">
-                                <div class="about-item-number green-bg G-center">
-                                    04
-                                </div>
-                                <div class="about-item-infos">
-                                    <h3 class="about-item-title">Прогнозирование цен на недвижимость</h3>
-                                    <p class="about-item-sub">
-                                        Анализ данных о продажах, экономических условиях и характеристиках объектов
-                                        недвижимости для предсказания будущих цен на жильё
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="about-item-img">
-                                <img src="assets/images/aboutItemImg4.webp" alt="">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="about-tablet-slider">
-                        <div class="about-swiper swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div style="background-image: url('assets/images/aboutItemDecor.webp')"
-                                         class="about-us-item G-image">
-
-                                        <div class="about-item-texts G-flex-column">
-                                            <div class="about-item-number blue-bg G-center">
-                                                01
-                                            </div>
-                                            <div class="about-item-infos">
-                                                <h3 class="about-item-title">Прогнозирование спроса</h3>
-                                                <p class="about-item-sub">Нейросеть может анализировать исторические данные
-                                                    о продажах, сезонные колебания и маркетинговые активности для предсказания
-                                                    будущего спроса на товары и услуги</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="about-item-img">
-                                            <img src="assets/images/aboutItemImg1.webp" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <div style="background-image: url('assets/images/aboutItemDecor.webp')"
-                                         class="about-us-item G-image">
-
-                                        <div class="about-item-texts G-flex-column">
-                                            <div class="about-item-number black-bg G-center">
-                                                02
-                                            </div>
-                                            <div class="about-item-infos">
-                                                <h3 class="about-item-title">Финансовое прогнозирование</h3>
-                                                <p class="about-item-sub">
-                                                    Использование нейросетей для анализа рыночных данных,
-                                                    новостей и экономических индикаторов с целью предсказания цен на акции и валюты
-                                                </p>
-                                            </div>
-                                        </div>
-
-                                        <div class="about-item-img">
-                                            <img src="assets/images/aboutItemImg2.webp" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <div style="background-image: url('assets/images/aboutItemDecor.webp')"
-                                         class="about-us-item G-image">
-
-                                        <div class="about-item-texts G-flex-column">
-                                            <div class="about-item-number white-bg G-center">
-                                                03
-                                            </div>
-                                            <div class="about-item-infos">
-                                                <h3 class="about-item-title">Результаты спортивных событий</h3>
-                                                <p class="about-item-sub">
-                                                    Нейросеть может анализировать статистику команд,
-                                                    игроков и других факторов для предсказания исходов
-                                                    спортивных матчей и турниров
-                                                </p>
-                                            </div>
-                                        </div>
-
-                                        <div class="about-item-img">
-                                            <img src="assets/images/aboutItemImg3.webp" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <div style="background-image: url('assets/images/aboutItemDecor.webp')"
-                                         class="about-us-item G-image">
-
-                                        <div class="about-item-texts G-flex-column">
-                                            <div class="about-item-number green-bg G-center">
-                                                04
-                                            </div>
-                                            <div class="about-item-infos">
-                                                <h3 class="about-item-title">Прогнозирование цен на недвижимость</h3>
-                                                <p class="about-item-sub">
-                                                    Анализ данных о продажах, экономических условиях и характеристиках объектов
-                                                    недвижимости для предсказания будущих цен на жильё
-                                                </p>
-                                            </div>
-                                        </div>
-
-                                        <div class="about-item-img">
-                                            <img src="assets/images/aboutItemImg4.webp" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div class=" swiper-pagination"></div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="about-mobile-btn-cnt">
-                        <button class="about-btn btn-black">Начать бесплатно</button>
-                    </div>
-
-
-                </div>
-            </div>
-        </section>
-
-        <section class="service-section section">
-            <div class="container">
-                <div class="service-body">
-                    <div class="trust-header G-justify-between">
-                        <h2 class="trust-title block-title">
-                            Зачем строить прогноз самому,
-                            есть есть нейросеть?
-
-                        </h2>
-                        <p class="trust-sub-title">
-                            Иногда времени мало, а дел много.
-                            <span class="text-wrap">Нейросеть берёт рутину на себя</span>
-                        </p>
-                        <div class="service-title-decor">
-                            <img src="assets/images/line6.webp" alt="">
-                        </div>
-                    </div>
-                    <div class="service-columns G-flex-column">
-                        <div class="service-column G-flex">
-                            <div class="service-item G-flex-column">
-                                <div class="service-item-header G-flex-column">
-                                    <div class="service-icon-bg G-center">⭐</div>
-                                    <h2 class="service-item-title">Высокая точность</h2>
-                                </div>
-
-                                <div class="service-item-texts">
-                                    <p class="service-item-sub">Нейросеть точно прогнозирует события, анализируя большие
-                                        объёмы данных и учитывая множество факторов одновременно</p>
-                                </div>
-                            </div>
-                            <div class="service-img-item">
-                                <img src="assets/images/service1.webp" alt="">
-                            </div>
-                        </div>
-                        <div class="service-column service-column-reverse G-flex">
-                            <div class="service-img-item">
-                                <img src="assets/images/service2.webp" alt="">
-                            </div>
-
-                            <div class="service-item G-flex-column">
-                                <div class="service-item-header G-flex-column">
-                                    <div class="service-icon-bg G-center">💎</div>
-                                    <h2 class="service-item-title">Обработка больших объемов</h2>
-                                </div>
-
-                                <div class="service-item-texts">
-                                    <p class="service-item-sub">
-                                        Нейросеть легко справляется с большим количеством данных, находя скрытые
-                                        зависимости и закономерности, которые сложно заметить, делая всё вручную
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="service-column G-flex">
-                            <div class="service-item G-flex-column">
-                                <div class="service-item-header G-flex-column">
-                                    <div class="service-icon-bg G-center">🚀</div>
-                                    <h2 class="service-item-title">Автоматизация процесса</h2>
-
-                                </div>
-
-                                <div class="service-item-texts">
-                                    <p class="service-item-sub">
-                                        Нейросеть автоматизирует задачи, исключая необходимость ручного анализа и
-                                        сокращая влияние человеческого фактора
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="service-img-item">
-                                <img src="assets/images/service3.webp" alt="">
-                            </div>
-                        </div>
-
-                        <div class="service-column service-column-reverse G-flex">
-                            <div class="service-img-item">
-                                <img src="assets/images/service4.webp" alt="">
-                            </div>
-
-                            <div class="service-item G-flex-column">
-                                <div class="service-item-header G-flex-column">
-                                    <div class="service-icon-bg G-center">🙌</div>
-                                    <h2 class="service-item-title">Улучшение пользовательского опыта</h2>
-
-                                </div>
-
-                                <div class="service-item-texts">
-                                    <p class="service-item-sub">
-                                        Прогнозирование на основе нейросетей может быть также использовано маркетологами
-                                        для персонализации услуг и рекомендаций
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
-
-
-                </div>
-
-            </div>
-        </section>
-
-        <section id="forecasting" class="forecasting-section section">
-            <div class="container">
-                <div class="forecasting-body G-justify-between">
-                    <div class="about-us-titles G-flex-column">
-                        <div class="about-us-texts">
-                            <h2 class=" block-title">
-                                Прогнозирование
-
-                                <span class="text-wrap">за пару кликов</span>
+                            <h2 class="advantages-item-title block-title">
+                                Точность распознавания <span class="text-wrap">речи — <span class="text-blueviolet">до 98%</span></span>
                             </h2>
-                            <p class="about-sub-title trust-sub-title">
-                                Сделать прогноз теперь проще простого
+                            <p class="advantages-item-text block-text">
+
+                                Передовые алгоритмы ИИ понимают речь <span class="text-wrap">даже при шуме и плохом качестве записи,</span>
+                                <span class="text-wrap">гарантируя
+                                максимальную точность</span>
                             </p>
                         </div>
 
-                        <div class="about-title-decor">
-                            <img src="assets/images/line7.webp" alt="">
-                        </div>
-                        <div class="about-btn-cnt">
-                            <button class="about-btn btn-black">Начать бесплатно</button>
-                        </div>
-                    </div>
+                        <div class="advantages-item ">
+                            <div class="advantages-icon G-flex">
+                                <img src="assets/images/advantagesIcon3.svg" alt="">
+                            </div>
+                            <h2 class="advantages-item-title block-title">
+                                <span class="text-blueviolet">50+ языков</span> для перевода <span class="text-wrap">и озвучки</span>
+                            </h2>
+                            <p class="advantages-item-text block-text">
 
-                    <div class="forecasting-items G-flex-column">
-                        <div class="forecasting-item bg-white ">
-                            <div class="forecasting-item-titles G-align-center">
-                                <div class="about-item-number blue-bg G-center">
-                                    01
-                                </div>
-                                <div class="forecasting-item-title">
-                                    <h3 class="about-item-title">Заполни запрос</h3>
+                                Создавайте контент для всего мира: поддержка <span class="text-wrap">популярных языков, а также возможность</span>
+                                локализации с учётом региональных акцентов
+                            </p>
+                        </div>
+
+
+                        <div class="advantages-item ">
+                            <div class="advantages-icon G-flex">
+                                <img src="assets/images/advantagesIcon4.svg" alt="">
+                            </div>
+                            <h2 class="advantages-item-title block-title">
+                                Голос звучит <span class="text-wrap">естественно на <span
+                                    class="text-blueviolet">99,9%</span></span>
+                            </h2>
+                            <p class="advantages-item-text block-text">
+                                Нейросеть передаёт интонации, паузы <span class="text-wrap">и эмоции, делая звук максимально</span>
+                                реалистичным —
+                                как в жизни
+                            </p>
+                        </div>
+
+                        <div class="advantages-item-tools G-align-center">
+
+                            <h2 class="advantages-tolls-title block-title">
+                                Озвучка, перевод, субтитры — мгновенно и точно
+                            </h2>
+
+                            <div class=" btn-white G-align-center">
+                                <span>Начать бесплатно</span>
+                                <div class="btn-icon-white G-center">
+                                    <i class="icon icon-arrowUp"></i>
                                 </div>
                             </div>
-                            <p class="forecasting-item-text">
-                                Пройди регистрацию и введи всё, что нужно
-                                для получения прогноза на любую тему
-                            </p>
 
-                        </div>
-
-                        <div class="forecasting-item bg-black">
-                            <div class="forecasting-item-titles G-align-center">
-                                <div class="about-item-number green-bg G-center">
-                                    02
-                                </div>
-                                <div class="forecasting-item-title">
-                                    <h3 class="about-item-title">Генерируй</h3>
-                                </div>
-                            </div>
-                            <p class="forecasting-item-text">
-                                Нажми на кнопку, и нейросеть начнёт магию
-                            </p>
-                        </div>
-
-                        <div class="forecasting-item bg-green">
-                            <div class="forecasting-item-titles G-align-center">
-                                <div class="about-item-number forecasting-white-bg G-center">
-                                    03
-                                </div>
-                                <div class="forecasting-item-title">
-                                    <h3 class="about-item-title">Подгони под себя</h3>
-                                </div>
-                            </div>
-                            <p class="forecasting-item-text">
-                                Посмотри результат и, если нужно, уточни детали. Нейросеть всё доработает по твоим
-                                требованиям
-                            </p>
-                        </div>
-
-
-                        <div class="forecasting-item bg-tertiary">
-                            <div class="forecasting-item-titles G-align-center">
-                                <div class="about-item-number black-bg G-center">
-                                    04
-                                </div>
-                                <div class="forecasting-item-title">
-                                    <h3 class="about-item-title">Забирай готовое</h3>
-                                </div>
-                            </div>
-                            <p class="forecasting-item-text">
-                                Посмотри результат и, если нужно, уточни детали. Нейросеть всё доработает по твоим
-                                требованиям
-                            </p>
                         </div>
 
                     </div>
 
-
-                    <div class="about-tablet-slider">
-                        <div class="about-swiper swiper">
+                    <div class="advantages-mobile-slider ">
+                        <div class="advantages-swiper swiper">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="forecasting-item bg-white ">
-                                        <div class="forecasting-item-titles G-align-center">
-                                            <div class="about-item-number blue-bg G-center">
-                                                01
-                                            </div>
-                                            <div class="forecasting-item-title">
-                                                <h3 class="about-item-title">Заполни запрос</h3>
-                                            </div>
-                                        </div>
-                                        <p class="forecasting-item-text">
-                                            Пройди регистрацию и введи всё, что нужно
-                                            для получения прогноза на любую тему
-                                        </p>
 
+                                <div class="swiper-slide">
+                                    <div class="advantages-item ">
+                                        <div class="advantages-icon G-flex">
+                                            <img src="assets/images/advantagesIcon.svg" alt="">
+                                        </div>
+                                        <h2 class="advantages-item-title block-title">
+                                            <span class="mobile-text-wrap">Быстрее,</span> чем человек — <span
+                                                class="text-blueviolet desktop-text-wrap">в 3 раза!</span>
+                                        </h2>
+                                        <p class="advantages-item-text block-text">
+                                            Нейросеть справляется с задачами
+                                            <span class="mobile-text-wrap">за минуты, а не часы.
+                                            Один час видео</span>
+                                            обрабатывается
+                                            всего за 10–15 минут,
+                                            <span class="mobile-text-wrap">позволяя экономить до 80% времени</span>
+                                        </p>
                                     </div>
+
                                 </div>
-
                                 <div class="swiper-slide">
-                                    <div class="forecasting-item bg-black">
-                                        <div class="forecasting-item-titles G-align-center">
-                                            <div class="about-item-number green-bg G-center">
-                                                02
-                                            </div>
-                                            <div class="forecasting-item-title">
-                                                <h3 class="about-item-title">Генерируй</h3>
-                                            </div>
+                                    <div class="advantages-item ">
+                                        <div class="advantages-icon G-flex">
+                                            <img src="assets/images/advantagesIcon2.svg" alt="">
                                         </div>
-                                        <p class="forecasting-item-text">
-                                            Нажми на кнопку, и нейросеть начнёт магию
+                                        <h2 class="advantages-item-title block-title">
+                                            Точность распознавания <span class="text-wrap">речи — <span
+                                                class="text-blueviolet">до 98%</span></span>
+                                        </h2>
+                                        <p class="advantages-item-text block-text">
+
+                                            Передовые алгоритмы ИИ понимают речь <span class="text-wrap">даже при шуме и плохом качестве записи,</span>
+                                            <span class="text-wrap">гарантируя
+                                максимальную точность</span>
                                         </p>
                                     </div>
+
                                 </div>
-
                                 <div class="swiper-slide">
-                                    <div class="forecasting-item bg-green">
-                                        <div class="forecasting-item-titles G-align-center">
-                                            <div class="about-item-number forecasting-white-bg G-center">
-                                                03
-                                            </div>
-                                            <div class="forecasting-item-title">
-                                                <h3 class="about-item-title">Подгони под себя</h3>
-                                            </div>
+                                    <div class="advantages-item ">
+                                        <div class="advantages-icon G-flex">
+                                            <img src="assets/images/advantagesIcon3.svg" alt="">
                                         </div>
-                                        <p class="forecasting-item-text">
-                                            Посмотри результат и, если нужно, уточни детали. Нейросеть всё доработает по твоим
-                                            требованиям
+                                        <h2 class="advantages-item-title block-title">
+                                            <span class="text-blueviolet mobile-text-wrap">50+ языков</span> для
+                                            перевода <span
+                                                class="desktop-text-wrap">и озвучки</span>
+                                        </h2>
+                                        <p class="advantages-item-text block-text">
+
+                                            Создавайте контент для всего мира: <span class="text-wrap">поддержка популярных языков,</span>
+                                            а также возможность
+                                            локализации
+                                            <span class="text-wrap">с учётом региональных акцентов</span>
                                         </p>
                                     </div>
+
                                 </div>
-
                                 <div class="swiper-slide">
-                                    <div class="forecasting-item bg-tertiary">
-                                        <div class="forecasting-item-titles G-align-center">
-                                            <div class="about-item-number black-bg G-center">
-                                                04
-                                            </div>
-                                            <div class="forecasting-item-title">
-                                                <h3 class="about-item-title">Забирай готовое</h3>
-                                            </div>
+                                    <div class="advantages-item ">
+                                        <div class="advantages-icon G-flex">
+                                            <img src="assets/images/advantagesIcon4.svg" alt="">
                                         </div>
-                                        <p class="forecasting-item-text">
-                                            Посмотри результат и, если нужно, уточни детали. Нейросеть всё доработает по твоим
-                                            требованиям
+                                        <h2 class="advantages-item-title block-title">
+                                            Голос звучит <span class="text-wrap">естественно на <span
+                                                class="text-blueviolet">99,9%</span></span>
+                                        </h2>
+                                        <p class="advantages-item-text block-text">
+                                            Нейросеть передаёт интонации, паузы <span class="text-wrap">и эмоции, делая звук максимально</span>
+                                            реалистичным —
+                                            как в жизни
                                         </p>
                                     </div>
-                                </div>
 
-                            </div>
-
-                            <div class=" swiper-pagination"></div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="about-mobile-btn-cnt">
-                        <button class="about-btn btn-black">Начать бесплатно</button>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <section id="reviews" class="reviews-section section">
-            <div class="container">
-                <div class="reviews-body">
-                    <div class="reviews-header G-justify-between">
-                        <h2 class="trust-title block-title">
-                            Честные отзывы от тех,
-                            <span class="desktop-text-wrap"> кто уже пробовал</span>
-                        </h2>
-                        <p class="trust-sub-title">
-                            Посмотри, что говорят о нейросети те,
-                            <span class="desktop-text-wrap">кто больше не тратит время на прогнозирование</span>
-                        </p>
-                        <div class="reviews-title-decor">
-                            <img src="assets/images/line8.webp" alt="">
-                        </div>
-                    </div>
-
-                    <div class="reviews-cnt">
-                        <div class="review-swiper swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="review-slide">
-                                        <div class="review-slide-header G-justify-between">
-                                            <div class="review-author G-align-center">
-                                                <div class="review-author-img">
-                                                    <img src="assets/images/review1.webp" alt="">
-                                                </div>
-                                                <div class="review-author-info G-flex-column">
-                                                    <h2 class="review-author-name">Красников Михаил</h2>
-                                                    <p class="review-author-profession">Финансовый аналитик</p>
-                                                </div>
-                                            </div>
-                                            <div class="review-icon">
-                                                <img src="assets/images/evaluation.svg" alt="">
-                                            </div>
-                                        </div>
-                                        <p class="review-slide-text">
-                                            Эта нейросеть значительно упростила мою работу. Прогнозы по акциям стали
-                                            более точными, и я смог сократить время на анализ данных. Рекомендую всем
-                                            в финансовом секторе!
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <div class="review-slide">
-                                        <div class="review-slide-header G-justify-between">
-                                            <div class="review-author G-align-center">
-                                                <div class="review-author-img">
-                                                    <img src="assets/images/review2.webp" alt="">
-                                                </div>
-                                                <div class="review-author-info G-flex-column">
-                                                    <h2 class="review-author-name">Никитина Анна</h2>
-                                                    <p class="review-author-profession">Маркетолог</p>
-                                                </div>
-                                            </div>
-                                            <div class="review-icon">
-                                                <img src="assets/images/evaluation.svg" alt="">
-                                            </div>
-                                        </div>
-                                        <p class="review-slide-text">
-                                            С помощью этой нейросети я смогла предсказать тренды потребительского
-                                            поведения. Это дало нам возможность адаптировать рекламные кампании
-                                            и увеличить продажи на 20%!
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <div class="review-slide">
-                                        <div class="review-slide-header G-justify-between">
-                                            <div class="review-author G-align-center">
-                                                <div class="review-author-img">
-                                                    <img src="assets/images/review3.webp" alt="">
-                                                </div>
-                                                <div class="review-author-info G-flex-column">
-                                                    <h2 class="review-author-name">Винникова Елизавета</h2>
-                                                    <p class="review-author-profession">Преподаватель</p>
-                                                </div>
-                                            </div>
-                                            <div class="review-icon">
-                                                <img src="assets/images/evaluation.svg" alt="">
-                                            </div>
-                                        </div>
-                                        <p class="review-slide-text">
-                                            Теперь я могу прогнозировать успеваемость учеников и выявлять тех,
-                                            кто нуждается в дополнительной помощи. Это позволяет мне более эффективно
-                                            планировать уроки.
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <div class="review-slide">
-                                        <div class="review-slide-header G-justify-between">
-                                            <div class="review-author G-align-center">
-                                                <div class="review-author-img">
-                                                    <img src="assets/images/review4.webp" alt="">
-                                                </div>
-                                                <div class="review-author-info G-flex-column">
-                                                    <h2 class="review-author-name">Лобов Иван</h2>
-                                                    <p class="review-author-profession">Эколог</p>
-                                                </div>
-                                            </div>
-                                            <div class="review-icon">
-                                                <img src="assets/images/evaluation.svg" alt="">
-                                            </div>
-                                        </div>
-                                        <p class="review-slide-text">
-                                            Я прогнозирую изменения в экосистемах. Это помогает мне лучше понимать
-                                            влияние человеческой деятельности на природу и разрабатывать стратегии
-                                            охраны окружающей среды.
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <div class="review-slide">
-                                        <div class="review-slide-header G-justify-between">
-                                            <div class="review-author G-align-center">
-                                                <div class="review-author-img">
-                                                    <img src="assets/images/review5.webp" alt="">
-                                                </div>
-                                                <div class="review-author-info G-flex-column">
-                                                    <h2 class="review-author-name">Гришин Дмитрий</h2>
-                                                    <p class="review-author-profession">Журналист</p>
-                                                </div>
-                                            </div>
-                                            <div class="review-icon">
-                                                <img src="assets/images/evaluation.svg" alt="">
-                                            </div>
-                                        </div>
-                                        <p class="review-slide-text">
-                                            С помощью нейросети я могу предсказывать, какие темы будут актуальны
-                                            в будущем. Это помогает мне оставаться на волне и писать статьи, которые
-                                            интересуют читателей.
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <div class="review-slide">
-                                        <div class="review-slide-header G-justify-between">
-                                            <div class="review-author G-align-center">
-                                                <div class="review-author-img">
-                                                    <img src="assets/images/review6.webp" alt="">
-                                                </div>
-                                                <div class="review-author-info G-flex-column">
-                                                    <h2 class="review-author-name">Кожевникова Елена</h2>
-                                                    <p class="review-author-profession">Психолог</p>
-                                                </div>
-                                            </div>
-                                            <div class="review-icon">
-                                                <img src="assets/images/evaluation.svg" alt="">
-                                            </div>
-                                        </div>
-                                        <p class="review-slide-text">
-                                            Нейросеть помогает мне предсказывать поведение клиентов на основе
-                                            их предыдущих сеансов. Это позволяет мне лучше адаптировать свои методы
-                                            работы и достигать лучших результатов.
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <div class="review-slide">
-                                        <div class="review-slide-header G-justify-between">
-                                            <div class="review-author G-align-center">
-                                                <div class="review-author-img">
-                                                    <img src="assets/images/review7.webp" alt="">
-                                                </div>
-                                                <div class="review-author-info G-flex-column">
-                                                    <h2 class="review-author-name">Зуева Мария</h2>
-                                                    <p class="review-author-profession">Специалист по логистике</p>
-                                                </div>
-                                            </div>
-                                            <div class="review-icon">
-                                                <img src="assets/images/evaluation.svg" alt="">
-                                            </div>
-                                        </div>
-                                        <p class="review-slide-text">
-                                            Прогнозирование спроса на товары стало намного точнее. Нейросеть помогает
-                                            оптимизировать запасы и снизить затраты на хранение. Отличное решение
-                                            для нашей компании!
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <div class="review-slide">
-                                        <div class="review-slide-header G-justify-between">
-                                            <div class="review-author G-align-center">
-                                                <div class="review-author-img">
-                                                    <img src="assets/images/review8.webp" alt="">
-                                                </div>
-                                                <div class="review-author-info G-flex-column">
-                                                    <h2 class="review-author-name">Шишкин Давид</h2>
-                                                    <p class="review-author-profession">Специалист по HR</p>
-                                                </div>
-                                            </div>
-                                            <div class="review-icon">
-                                                <img src="assets/images/evaluation.svg" alt="">
-                                            </div>
-                                        </div>
-                                        <p class="review-slide-text">
-                                            Нейросеть помогает мне предсказывать текучесть кадров и выявлять
-                                            потенциальных кандидатов на основе их резюме. Это значительно ускоряет
-                                            процесс подбора персонала.
-                                        </p>
-                                    </div>
                                 </div>
 
                             </div>
 
-                            <div class="review-swiper-arrows G-center">
+                            <div class="advantages-swiper-arrows G-center">
                                 <div class="reviews-slider-next G-center swiper-button-prev">
                                     <i class="icon icon-arrow"></i>
                                 </div>
                                 <div class="reviews-slider-prev G-center swiper-button-next">
+                                    <span>Далее</span>
                                     <i class="icon icon-arrow"></i>
 
                                 </div>
@@ -981,194 +723,875 @@
 
                         </div>
                     </div>
+
+                    <div class="advantages-item-tools advantages-tools-mobile  G-align-center">
+
+                        <h2 class="advantages-tolls-title block-title">
+                            Озвучка, перевод, субтитры — <span class="text-wrap">мгновенно и точно</span>
+                        </h2>
+
+                        <div class=" btn-white G-align-center">
+                            <span>Начать бесплатно</span>
+                            <div class="btn-icon G-center">
+                                <i class="icon icon-arrowUp"></i>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+        </section>
+
+        <section id="howWork" class="how-work-section section">
+            <div class="container">
+                <div class="how-work-body">
+                    <h2 class="section-title">
+                        Как это работает? <span class="text-wrap">3 простых шага</span>
+
+                    </h2>
+                    <p class="section-text">
+                        Озвучка и перевод проще, чем вы <span
+                            class="text-wrap">думаете — загрузите, настройте, готово!</span>
+
+                    </p>
+
+                    <div class="how-work-items block-cnt G-flex">
+
+                        <div class="how-work-item G-column-center">
+                            <div class="work-item-number">
+                                01
+                            </div>
+                            <h2 class="block-title">Загрузите файл</h2>
+                            <p class="work-item-text block-text">
+                                <span class="mobile-text-wrap">Добавьте видео, аудио </span>или документ — <span
+                                    class="desktop-text-wrap">нейросеть обработает</span>
+                                его за считанные минуты
+                            </p>
+                            <div class="work-item-img G-flex">
+                                <img class="img-desktop" src="assets/images/workItemImg.webp" alt="">
+                                <img class="img-mobile" src="assets/images/workItemImgMobile.webp" alt="">
+
+
+                            </div>
+                        </div>
+
+
+                        <div class="how-work-item G-column-center">
+                            <div class="work-item-number">
+                                02
+                            </div>
+                            <h2 class="block-title">Выберите параметры</h2>
+                            <p class="work-item-text block-text">
+                                Настройте озвучку, выберите <span class="text-wrap">нужный голос, скорость и язык</span>
+                                из 50+ доступных
+                            </p>
+                            <div class="work-item-img G-flex">
+                                <img class="img-desktop" src="assets/images/workItemImg2.webp" alt="">
+                                <img class="img-mobile" src="assets/images/workItemImg2Mobile.webp" alt="">
+
+                            </div>
+                        </div>
+
+                        <div class="how-work-item G-column-center">
+                            <div class="work-item-number">
+                                03
+                            </div>
+                            <h2 class="block-title">Скачайте</h2>
+                            <p class="work-item-text block-text">
+                                Получите озвученное видео, <span class="text-wrap">аудиофайл или субтитры</span>
+                                без потери качества
+                            </p>
+                            <div class="work-item-img G-flex">
+                                <img class="img-desktop" src="assets/images/workItemImg3.webp" alt="">
+
+                                <img class="img-mobile" src="assets/images/workItemImg3Mobile.webp" alt="">
+
+
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </section>
 
 
-        <section id="faq" class="faq-section section">
+        <section class="services-section section">
+            <div class="container">
+                <div class="services-body">
+                    <h2 class="section-title">
+                        Где может пригодиться <span class="mobile-text-wrap">нейросеть?</span>
+                    </h2>
+                    <p class="section-text">
+                        Наш сервис создан для блогеров, преподавателей, <span class="text-wrap">бизнеса и всех, кто работает с контентом</span>
+                    </p>
+
+                    <div class="services-column block-cnt G-flex">
+                        <div class="services-items  G-flex-column">
+                            <div class="service-item">
+                                <h3 class="block-title">Блогеры</h3>
+                                <p class="block-text desktop-text">Озвучивайте ролики на иностранных <span
+                                        class="text-wrap">языках и расширяйте аудиторию</span>
+                                </p>
+                                <p class="block-text mobile-text">
+                                    Озвучивайте ролики <span class="mobile-text-wrap">на иностранных языках</span>
+                                    и расширяйте аудиторию
+                                </p>
+                                <div class="service-icon G-flex">
+                                    <img src="assets/images/serviceIcon.svg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="service-item">
+                                <h3 class="block-title">Онлайн-школы</h3>
+                                <p class="block-text mW-177">
+                                    Создавайте озвученные лекции и обучающие <span class="desktop-text-wrap">видео для студентов по всему миру</span>
+                                </p>
+                                <div class="service-icon G-flex">
+                                    <img src="assets/images/serviceIcon2.svg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="service-item">
+                                <h3 class="block-title">Бизнес</h3>
+                                <p class="block-text">
+                                    Локализуйте презентации, вебинары <span class="desktop-text-wrap">и инструкции для международных сотрудников</span>
+                                </p>
+                                <div class="service-icon G-flex">
+                                    <img src="assets/images/serviceIcon3.svg" alt="">
+                                </div>
+                            </div>
+
+
+                            <div class="service-item service-mobile-item">
+                                <h3 class="block-title">Фрилансеры</h3>
+                                <p class="block-text">
+                                    Ускорьте работу над проектами: озвучка, <span class="desktop-text-wrap">субтитры, перевод — за минуты</span>
+                                </p>
+                                <div class="service-icon G-flex">
+                                    <img src="assets/images/serviceIcon4.svg" alt="">
+                                </div>
+                            </div>
+
+
+                            <div class="service-item service-mobile-item">
+                                <h3 class="block-title">Студии дубляжа</h3>
+                                <p class="block-text">
+                                    Переводите и озвучивайте интервью, <span class="desktop-text-wrap">документалки и фильмы без потери качества</span>
+                                </p>
+                                <div class="service-icon G-flex">
+                                    <img src="assets/images/serviceIcon5.svg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="service-item service-mobile-item">
+                                <h3 class="block-title">Плоховидящие</h3>
+                                <p class="block-text">
+                                    Превращайте текст в аудио, чтобы книги, <span class="desktop-text-wrap">инструкции и документы стали доступнее</span>
+                                </p>
+                                <div class="service-icon G-flex">
+                                    <img src="assets/images/serviceIcon6.svg" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="service-media G-flex">
+                            <img class="img-desktop" src="assets/images/serviceMedia.webp" alt="">
+
+                            <img class="img-mobile" src="assets/images/serviceMediaMobile.webp" alt="">
+
+                        </div>
+                        <div class="services-items services-desktop-items  G-flex-column">
+
+                            <div class="service-item">
+                                <h3 class="block-title">Фрилансеры</h3>
+                                <p class="block-text">
+                                    Ускорьте работу над проектами: озвучка, <span class="text-wrap">субтитры, перевод — за минуты</span>
+                                </p>
+                                <div class="service-icon G-flex">
+                                    <img src="assets/images/serviceIcon4.svg" alt="">
+                                </div>
+                            </div>
+
+
+                            <div class="service-item">
+                                <h3 class="block-title">Студии дубляжа</h3>
+                                <p class="block-text">
+                                    Переводите и озвучивайте интервью, <span class="text-wrap">документалки и фильмы без потери качества</span>
+                                </p>
+                                <div class="service-icon G-flex">
+                                    <img src="assets/images/serviceIcon5.svg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="service-item">
+                                <h3 class="block-title">Плоховидящие</h3>
+                                <p class="block-text">
+                                    Превращайте текст в аудио, чтобы книги, <span class="text-wrap">инструкции и документы стали доступнее</span>
+                                </p>
+                                <div class="service-icon G-flex">
+                                    <img src="assets/images/serviceIcon6.svg" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="reviews" class="reviews-section  section ">
+            <div class="container">
+                <div class="reviews-body ">
+                    <h2 class="section-title">
+                        Реальные отзывы <span class="mobile-text-wrap">реальных людей</span>
+                    </h2>
+                    <p class="section-text">
+                        Тысячи пользователей сделали контент
+                        <span class="text-wrap">доступнее для миллиона людей</span>
+                    </p>
+                    <div class="reviews-cnt block-cnt G-align-end">
+                        <div class="reviews-slider ">
+                            <div class="reviews-swiper swiper">
+                                <div class="swiper-wrapper">
+
+                                    <div class="swiper-slide">
+                                        <div class="reviews-item G-flex-column">
+                                            <div class="reviews-item-header G-align-center">
+                                                <div class="reviews-item-stars G-align-center">
+                                                    <i class="icon icon-star"></i>
+                                                    <i class="icon icon-star"></i>
+                                                    <i class="icon icon-star"></i>
+                                                    <i class="icon icon-star"></i>
+                                                    <i class="icon icon-star"></i>
+
+                                                </div>
+                                                <p class="reviews-data">
+                                                    15 февраля 2025
+                                                </p>
+                                            </div>
+
+
+                                            <p class="reviews-item-text">
+                                                Я сначала думал, что это будет очередной скучный синтезированный голос,
+                                                но,
+                                                черт возьми, звучит реально натурально! Теперь озвучиваю видео в разы
+                                                быстрее, не мучаясь <span class="text-wrap">с дикцией и дублями. Крутая тема!</span>
+                                            </p>
+
+                                            <div class="reviews-item-info G-align-center">
+                                                <div class="reviews-item-img G-flex">
+                                                    <img src="assets/images/reviewsItemImg.webp" alt="">
+                                                </div>
+                                                <div class="reviews-author">
+                                                    <h3 class="reviews-item-name">Алексей</h3>
+                                                    <p class="reviews-profession">YouTube-блогер</p>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="reviews-item G-flex-column">
+                                            <div class="reviews-item-header G-align-center">
+                                                <div class="reviews-item-stars G-align-center">
+                                                    <i class="icon icon-star"></i>
+                                                    <i class="icon icon-star"></i>
+                                                    <i class="icon icon-star"></i>
+                                                    <i class="icon icon-star"></i>
+                                                    <i class="icon icon-star"></i>
+
+                                                </div>
+                                                <p class="reviews-data">
+                                                    22 января 2025
+                                                </p>
+                                            </div>
+
+
+                                            <p class="reviews-item-text">
+                                                Озвучиваю лекции с помощью этой нейросети, и студенты довольны! Голос
+                                                естественный, можно выбрать тембр под настроение и стиль курса. Теперь
+                                                не трачу часы на запись — <span class="text-wrap">просто загружаю текст, и готово!</span>
+                                            </p>
+
+                                            <div class="reviews-item-info G-align-center">
+                                                <div class="reviews-item-img G-flex">
+                                                    <img src="assets/images/reviewsItemImg2.webp" alt="">
+                                                </div>
+                                                <div class="reviews-author">
+                                                    <h3 class="reviews-item-name">Марина</h3>
+                                                    <p class="reviews-profession">Преподаватель онлайн-курсов</p>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="reviews-item G-flex-column">
+                                            <div class="reviews-item-header G-align-center">
+                                                <div class="reviews-item-stars G-align-center">
+                                                    <i class="icon icon-star"></i>
+                                                    <i class="icon icon-star"></i>
+                                                    <i class="icon icon-star"></i>
+                                                    <i class="icon icon-star"></i>
+                                                    <i class="icon icon-star"></i>
+
+                                                </div>
+                                                <p class="reviews-data">
+                                                    3 февраля 2025
+                                                </p>
+                                            </div>
+
+
+                                            <p class="reviews-item-text">
+                                                Используем нейросеть для озвучки рекламных роликов и презентаций. Очень
+                                                удобно, когда срочно нужен голос для проекта. Реалистично, быстро
+                                                и без лишних затрат!
+                                            </p>
+
+                                            <div class="reviews-item-info G-align-center">
+                                                <div class="reviews-item-img G-flex">
+                                                    <img src="assets/images/reviewsItemImg3.webp" alt="">
+                                                </div>
+                                                <div class="reviews-author">
+                                                    <h3 class="reviews-item-name">Игорь</h3>
+                                                    <p class="reviews-profession">Маркетолог</p>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="reviews-item G-flex-column">
+                                            <div class="reviews-item-header G-align-center">
+                                                <div class="reviews-item-stars G-align-center">
+                                                    <i class="icon icon-star"></i>
+                                                    <i class="icon icon-star"></i>
+                                                    <i class="icon icon-star"></i>
+                                                    <i class="icon icon-star"></i>
+                                                    <i class="icon icon-star"></i>
+
+                                                </div>
+                                                <p class="reviews-data">
+                                                    10 декабря 2024
+                                                </p>
+                                            </div>
+
+
+                                            <p class="reviews-item-text">
+                                                Я обожаю слушать книги, но далеко не все из них есть в аудиоформате.
+                                                Теперь
+                                                просто загружаю текст в нейросеть и слушаю в удобном формате. Голоса
+                                                звучат
+                                                так, будто их читает реальный диктор!
+                                            </p>
+
+                                            <div class="reviews-item-info G-align-center">
+                                                <div class="reviews-item-img G-flex">
+                                                    <img src="assets/images/reviewsItemImg4.webp" alt="">
+                                                </div>
+                                                <div class="reviews-author">
+                                                    <h3 class="reviews-item-name">Анна</h3>
+                                                    <p class="reviews-profession">Писательница</p>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="reviews-item G-flex-column">
+                                            <div class="reviews-item-header G-align-center">
+                                                <div class="reviews-item-stars G-align-center">
+                                                    <i class="icon icon-star"></i>
+                                                    <i class="icon icon-star"></i>
+                                                    <i class="icon icon-star"></i>
+                                                    <i class="icon icon-star"></i>
+                                                    <i class="icon icon-star"></i>
+
+                                                </div>
+                                                <p class="reviews-data">
+                                                    8 февраля 2025
+                                                </p>
+                                            </div>
+
+
+                                            <p class="reviews-item-text">
+                                                Читаю много документов, но иногда хочется просто включить и слушать.
+                                                Эта штука <span
+                                                    class="text-wrap">помогает преобразовать контракты в речь,</span>
+                                                что реально экономит
+                                                время. Кто работает с текстами — поймут!
+                                            </p>
+
+                                            <div class="reviews-item-info G-align-center">
+                                                <div class="reviews-item-img G-flex">
+                                                    <img src="assets/images/reviewsItemImg5.webp" alt="">
+                                                </div>
+                                                <div class="reviews-author">
+                                                    <h3 class="reviews-item-name">Владимир</h3>
+                                                    <p class="reviews-profession">Юрист</p>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="reviews-item G-flex-column">
+                                            <div class="reviews-item-header G-align-center">
+                                                <div class="reviews-item-stars G-align-center">
+                                                    <i class="icon icon-star"></i>
+                                                    <i class="icon icon-star"></i>
+                                                    <i class="icon icon-star"></i>
+                                                    <i class="icon icon-star"></i>
+                                                    <i class="icon icon-star"></i>
+
+                                                </div>
+                                                <p class="reviews-data">
+                                                    19 января 2025
+                                                </p>
+                                            </div>
+
+
+                                            <p class="reviews-item-text">
+                                                Искала хорошую нейросеть для озвучки эпизодов, когда диктор недоступен.
+                                                Впечатлилась качеством голосов — особенно если подобрать подходящий
+                                                тембр.
+                                                Теперь иногда даже миксую AI-озвучку с живыми спикерами!
+                                            </p>
+
+                                            <div class="reviews-item-info G-align-center">
+                                                <div class="reviews-item-img G-flex">
+                                                    <img src="assets/images/reviewsItemImg6.webp" alt="">
+                                                </div>
+                                                <div class="reviews-author">
+                                                    <h3 class="reviews-item-name">Светлана</h3>
+                                                    <p class="reviews-profession">Продюсер подкастов</p>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="swiper-slide">
+
+                                        <div class="reviews-item G-flex-column">
+                                            <div class="reviews-item-header G-align-center">
+                                                <div class="reviews-item-stars G-align-center">
+                                                    <i class="icon icon-star"></i>
+                                                    <i class="icon icon-star"></i>
+                                                    <i class="icon icon-star"></i>
+                                                    <i class="icon icon-star"></i>
+                                                    <i class="icon icon-star"></i>
+
+                                                </div>
+                                                <p class="reviews-data">
+                                                    1 марта 2025
+                                                </p>
+                                            </div>
+
+
+                                            <p class="reviews-item-text">
+                                                Я программист, и мне часто лень читать документацию. Эта штука просто
+                                                <span class="text-wrap">озвучивает её мне фоном, пока я работаю.</span>
+                                                Вроде мелочь, а кайф!
+                                            </p>
+
+                                            <div class="reviews-item-info G-align-center">
+                                                <div class="reviews-item-img G-flex">
+                                                    <img src="assets/images/reviewsItemImg7.webp" alt="">
+                                                </div>
+                                                <div class="reviews-author">
+                                                    <h3 class="reviews-item-name">Дмитрий</h3>
+                                                    <p class="reviews-profession">Разработчик</p>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="swiper-slide">
+
+                                        <div class="reviews-item G-flex-column">
+                                            <div class="reviews-item-header G-align-center">
+                                                <div class="reviews-item-stars G-align-center">
+                                                    <i class="icon icon-star"></i>
+                                                    <i class="icon icon-star"></i>
+                                                    <i class="icon icon-star"></i>
+                                                    <i class="icon icon-star"></i>
+                                                    <i class="icon icon-star"></i>
+
+                                                </div>
+                                                <p class="reviews-data">
+                                                    1 марта 2025
+                                                </p>
+                                            </div>
+
+
+                                            <p class="reviews-item-text">
+                                                Запускали серию роликов для соцсетей — нейросеть сэкономила кучу
+                                                времени!
+                                                Озвучка звучит профессионально, а не как робот из 2010-х. Теперь не надо
+                                                искать дикторов для каждого проекта!
+                                            </p>
+
+                                            <div class="reviews-item-info G-align-center">
+                                                <div class="reviews-item-img G-flex">
+                                                    <img src="assets/images/reviewsItemImg8.webp" alt="">
+                                                </div>
+                                                <div class="reviews-author">
+                                                    <h3 class="reviews-item-name">Екатерина</h3>
+                                                    <p class="reviews-profession">SMM-специалист</p>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="swiper-slide">
+
+                                        <div class="reviews-item G-flex-column">
+                                            <div class="reviews-item-header G-align-center">
+                                                <div class="reviews-item-stars G-align-center">
+                                                    <i class="icon icon-star"></i>
+                                                    <i class="icon icon-star"></i>
+                                                    <i class="icon icon-star"></i>
+                                                    <i class="icon icon-star"></i>
+                                                    <i class="icon icon-star"></i>
+
+                                                </div>
+                                                <p class="reviews-data">
+                                                    2 декабря 2024
+                                                </p>
+                                            </div>
+
+
+                                            <p class="reviews-item-text">
+                                                Сначала скептически отнёсся, но потом попробовал. Озвучка не просто
+                                                нормальная, а реально топовая! Можно делать закадровый перевод
+                                                и озвучивать
+                                                видео за считаные минуты. Короче, лайк!
+                                            </p>
+
+                                            <div class="reviews-item-info G-align-center">
+                                                <div class="reviews-item-img G-flex">
+                                                    <img src="assets/images/reviewsItemImg9.webp" alt="">
+                                                </div>
+                                                <div class="reviews-author">
+                                                    <h3 class="reviews-item-name">Максим</h3>
+                                                    <p class="reviews-profession">Видеомонтажёр</p>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div class="review-swiper-arrows G-center">
+                            <div class="reviews-slider-next G-center swiper-button-prev">
+                                <i class="icon icon-arrow"></i>
+                            </div>
+                            <div class="reviews-slider-prev G-center swiper-button-next">
+                                <span>Далее</span>
+                                <i class="icon icon-arrow"></i>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+
+        <section id="faq" class="faq-section  section">
             <div class="container">
                 <div class="faq-body G-justify-between">
-                    <div class="faq-titles">
-                        <h2 class="block-title">FAQ</h2>
+                    <h2 class="faq-title section-title">
+                        FAQ
+                    </h2>
 
-                        <div class="faq-title-decor">
-                            <img src="assets/images/line9.png" alt="">
-                        </div>
-                    </div>
                     <div class="faq-items G-flex-column">
+
                         <div class="faq-item ">
                             <div class="faq-item-header G-justify-between">
-                                <p>Что такое нейросеть для прогнозирования?</p>
+                                <p>Как работает ваша нейросеть?</p>
                                 <div class="faq-item-icon G-center"></div>
                             </div>
                             <div class="faq-item-sub">
-                                Нейросеть для прогнозирования — это алгоритм машинного обучения, который использует
-                                структуры, вдохновлённые работой человеческого мозга, для анализа данных и предсказания
-                                будущих событий на основе исторических данных.
+                                Наша нейросеть преобразует текст в речь с реалистичной интонацией,
+                                <span class="desktop-text-wrap">подстраиваясь
+                                под стиль, эмоции и темп. Вы просто загружаете текст,</span>
+                                выбираете голос — и получаете
+                                готовую озвучку за считаные минуты
                             </div>
                         </div>
 
                         <div class="faq-item ">
                             <div class="faq-item-header G-justify-between">
-                                <p>Какие типы данных нейросеть может анализировать?</p>
+                                <p>
+                                    Какие голоса доступны?
+                                </p>
                                 <div class="faq-item-icon G-center"></div>
                             </div>
                             <div class="faq-item-sub">
-                                Нейросеть может анализировать различные типы данных, включая временные ряды, числовые
-                                и категориальные данные, текстовые данные и изображения, в зависимости от конкретной
-                                задачи прогнозирования.
-                            </div>
-                        </div>
-
-
-                        <div class="faq-item ">
-                            <div class="faq-item-header G-justify-between">
-                                <p>Какие преимущества использования нейросети для прогнозирования?</p>
-                                <div class="faq-item-icon G-center"></div>
-                            </div>
-                            <div class="faq-item-sub">
-                                Нейросети могут обрабатывать большие объёмы данных, выявлять сложные зависимости
-                                и адаптироваться к изменениям в данных, что делает их более эффективными по сравнению
-                                с традиционными методами прогнозирования.
+                                У нас есть широкий выбор голосов: мужские и женские, разных тембров, с различными
+                                акцентами и эмоциональной окраской. Вы можете подобрать оптимальный вариант для своего
+                                контента
                             </div>
                         </div>
 
 
                         <div class="faq-item ">
                             <div class="faq-item-header G-justify-between">
-                                <p>Я могу использовать нейросеть для собственных данных?</p>
+                                <p>
+                                    Можно ли озвучивать видео?
+                                </p>
                                 <div class="faq-item-icon G-center"></div>
                             </div>
                             <div class="faq-item-sub">
-                                Да, вы можете загрузить свои данные в нашу систему, и мы поможем вам обучить модель
-                                для ваших конкретных нужд и задач.
+                                Да, нейросеть идеально подходит для видео! Вы можете загрузить текст или субтитры,
+                                выбрать голос и получить профессиональную озвучку для YouTube, соцсетей, курсов,
+                                презентаций и даже фильмов
+                            </div>
+                        </div>
+
+
+                        <div class="faq-item ">
+                            <div class="faq-item-header G-justify-between">
+                                <p>
+                                    Какой формат файлов поддерживается?
+                                </p>
+                                <div class="faq-item-icon G-center"></div>
+                            </div>
+                            <div class="faq-item-sub">
+                                Вы можете загрузить текстовые файлы (TXT, DOCX, PDF) или просто вставить текст вручную.
+                                Готовую озвучку можно скачать в аудиоформате MP3, WAV или сразу наложить на видео
                             </div>
                         </div>
 
                         <div class="faq-item ">
                             <div class="faq-item-header G-justify-between">
-                                <p>Как обеспечить безопасность моих данных?</p>
+                                <p>
+                                    Есть ли возможность перевода на другие языки?
+                                </p>
                                 <div class="faq-item-icon G-center"></div>
                             </div>
                             <div class="faq-item-sub">
-                                Мы принимаем безопасность данных очень серьёзно. Все данные шифруются, и доступ
-                                к ним ограничен. Мы также соблюдаем все актуальные законы о защите данных.
+                                Да, мы поддерживаем 50+ языков и можем не только переводить текст, но и озвучивать
+                                его с правильной интонацией
                             </div>
                         </div>
 
+                        <div class="faq-item ">
+                            <div class="faq-item-header G-justify-between">
+                                <p>
+                                    Какова точность распознавания речи?
+                                </p>
+                                <div class="faq-item-icon G-center"></div>
+                            </div>
+                            <div class="faq-item-sub">
+                                Наши алгоритмы обеспечивают точность до 98%, даже если запись сделана в шумной
+                                обстановке или с низким качеством
+                            </div>
+                        </div>
+
+
+                        <div class="faq-item ">
+                            <div class="faq-item-header G-justify-between">
+                                <p>
+                                    Голос звучит натурально или как робот?
+                                </p>
+                                <div class="faq-item-icon G-center"></div>
+                            </div>
+                            <div class="faq-item-sub">
+                                Мы используем передовые технологии синтеза речи, благодаря которым голос звучит
+                                естественно — с правильными паузами, эмоциями и интонацией
+                            </div>
+                        </div>
+
+
+                        <div class="faq-item ">
+                            <div class="faq-item-header G-justify-between">
+                                <p>
+                                    Можно ли использовать нейросеть для коммерческих проектов?
+                                </p>
+                                <div class="faq-item-icon G-center"></div>
+                            </div>
+                            <div class="faq-item-sub">
+                                Да, вы можете использовать нашу озвучку в рекламе, подкастах, видео для бизнеса,
+                                обучающих курсах и любом другом коммерческом контенте
+                            </div>
+                        </div>
 
                     </div>
-
 
                 </div>
             </div>
-        </section>
 
-
-        <section class="predict-section section">
-            <div class="container">
-                <div style="background-image: url('assets/images/ctaBg.webp')" class="predict-body G-image ">
-
-
-                    <div class="predict-info ">
-                        <h2 class="predict-title">Прогнозируйте с уверенностью!</h2>
-                        <p class="predict-sub-title">Нейросеть анализирует данные и предоставляют точные прогнозы.
-                            <span class="desktop-text-wrap">Присоединяйтесь к лидерам отрасли!</span></p>
-
-                        <button class="predict-btn btn-black">Начать бесплатно</button>
-                        <div class="predict-title-line">
-                            <img src="assets/images/line11.webp" alt="">
-                        </div>
-                    </div>
-
-                    <div class="cta-icon">
-                        <img src="assets/images/ctaIcon.webp" alt="">
-                    </div>
-                    <div class="cta-line">
-                        <img src="assets/images/line10.webp" alt="">
-                    </div>
-
-                    <div class="predict-card predict-card--one">
-                        <div class="predict-card-icon">
-                            <img src="assets/images/heart2.webp" alt="">
-                        </div>
-                        <p class="predict-card-text">Понятный интерфейс</p>
-                    </div>
-                    <div class="predict-card predict-card--two">
-                        <div class="predict-card-icon">
-                            <img src="assets/images/flagRu.webp" alt="">
-                        </div>
-                        <p class="predict-card-text">На русском языке</p>
-                    </div>
-                    <div class="predict-card predict-card--tree">
-                        <div class="predict-card-icon">
-                            <img src="assets/images/eart.webp" alt="">
-                        </div>
-                        <p class="predict-card-text">Работа без VPN</p>
-                    </div>
-                    <div class="predict-card predict-card--for">
-                        <div class="predict-card-icon ">
-                            <img src="assets/images/fire.webp" alt="">
-                        </div>
-                        <p class="predict-card-text">Простая регистрация</p>
-                    </div>
-
-                </div>
-
+            <div class="faq-decor G-flex">
+                <img src="assets/images/faqDecor.webp" alt="">
             </div>
-            <div class="predict-bg">
 
-            </div>
+
         </section>
 
 
     </main>
-    <footer class="footer">
+    <footer class="footer section">
         <div class="container">
-            <div class="footer-body G-justify-between">
-                <a class="footer-logo" href="index.html">
-                    <img src="assets/images/footerLogo.svg" alt="">
-                </a>
-                <button class="btn-white footer-btn-mobile">Начать бесплатно</button>
+            <div class="footer-body">
 
-                <nav class="footer-menu">
-                    <ul class="footer-menu-list G-flex">
-                        <li>
-                            <a href="#possibilities">Возможности</a>
-                        </li>
-                        <li>
-                            <a href="#forecasting">Как работает</a>
-                        </li>
-                        <li>
-                            <a href="#reviews">Отзывы</a>
-                        </li>
-                        <li>
-                            <a href="#faq">FAQ</a>
-                        </li>
-                    </ul>
-                </nav>
+                <div class="footer-titles">
+                    <h2 class=" section-title">Ваш контент = <span class="mobile-text-wrap">идеальный звук!</span></h2>
+                    <p class="footer-text section-text">
+                        Никаких сложных настроек, студий <span class="mobile-text-wrap">и дикторов — просто загрузите текст,</span>
+                        выберите голос
+                        и наслаждайтесь
+                        результатом
+                    </p>
 
-                <button class="btn-white footer-btn">Регистрация бесплатно</button>
+                    <div class="footer-btn btn-blueviolet G-align-center">
+                        <span>Начать бесплатно</span>
+                        <div class="btn-icon G-center">
+                            <i class="icon icon-arrowUp"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-service-items G-flex">
+
+                    <div class="footer-service-item">
+                        <div class="footer-service-icon G-flex">
+                            <img src="assets/images/footerServiceIcon.svg" alt="">
+                        </div>
+                        <h3 class="block-title">
+                            Тратите много <span class="desktop-text-wrap">времени?</span>
+                        </h3>
+                        <p class="block-text">
+                            Теперь озвучка, перевод и субтитры теперь занимают минуты,
+                            а не часы
+                        </p>
+                    </div>
+
+                    <div class="footer-service-item">
+                        <div class="footer-service-icon G-flex">
+                            <img src="assets/images/footerServiceIcon2.svg" alt="">
+                        </div>
+                        <h3 class="block-title">
+                            Хотите сэкономить <span class="desktop-text-wrap">на дубляже?</span>
+                        </h3>
+                        <p class="block-text">
+                            <span class="mobile-text-wrap">Забудьте о дорогостоящих дикторах</span>
+                            <span class="desktop-text-wrap">и студиях. ИИ выдаст качественную</span>
+                            озвучку <span class="mobile-text-wrap">без лишних затрат
+                            и правок</span>
+                        </p>
+                    </div>
+
+
+                    <div class="footer-service-item">
+                        <div class="footer-service-icon G-flex">
+                            <img src="assets/images/footerServiceIcon3.svg" alt="">
+                        </div>
+                        <h3 class="block-title">
+                            Планируете расширить <span class="desktop-text-wrap">аудиторию?</span>
+                        </h3>
+                        <p class="block-text">
+                            <span class="desktop-text-wrap">Озвучивайте контент на 50+</span> языках
+                            <span class="mobile-text-wrap">и делайте
+                                <span class="desktop-text-wrap">его доступным всему
+                            миру!</span>
+                            </span>
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="footer-cnt G-align-center">
+                    <a href="" class="G-flex">
+                        <img src="assets/images/logo.svg" alt="">
+                    </a>
+
+                    <nav class="footer-menu">
+                        <ul class="footer-menu-list G-align-center">
+                            <li class="footer-menu-item">
+                                <a class="footer-menu-link" href="#possibilities">Возможности</a>
+                            </li>
+                            <li class="footer-menu-item">
+                                <a class="footer-menu-link" href="#howWork">Как работает</a>
+                            </li>
+                            <li class="footer-menu-item">
+                                <a class="footer-menu-link" href="#reviews">Отзывы</a>
+                            </li>
+                            <li class="footer-menu-item">
+                                <a class="footer-menu-link last-item" href="#faq">FAQ</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <button class="btn-register">Регистрация</button>
+
+                </div>
+
+                <p class="footer-clue">
+                    © 2025 Chat GPT.
+                    <span class="desktop-text-wrap">Все права защищены</span>
+                </p>
+
 
             </div>
-            <div class="footer-clue ">
-                <span>©2025 ChatGPT.</span>
-                <span>Все права защищены</span>
-            </div>
+
+
+        </div>
+
+        <div class="footer-decor">
+            <img class="footer-decor-desktop" src="assets/images/footerDecor.webp" alt="">
+            <img class="footer-decor-mobile" src="assets/images/footerDecorMobile.webp" alt="">
+
         </div>
     </footer>
 
 
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="assets/js/index.js"></script>
 <script src="assets/js/swiper.js"></script>
-<script src="assets/js/gsap.js"></script>
 
 </body>
 </html>

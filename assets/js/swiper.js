@@ -1,24 +1,26 @@
 
 
 
-
-let reviewsSwiper = new Swiper(".review-swiper", {
+let reviewsSwiper = new Swiper(".reviews-swiper", {
     spaceBetween: 20,
-    slidesPerView: 3,
-    loop:true,
+    slidesPerView: 2,
 
     navigation: {
         nextEl: '.reviews-slider-prev',
         prevEl: '.reviews-slider-next',
     },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
     breakpoints: {
         320: {slidesPerView: 1,},
         540: {slidesPerView: 1,},
-        576: {slidesPerView: 1.5},
+        576: {slidesPerView: 1.2},
         779: {slidesPerView: 2},
-        954: {slidesPerView: 2.4},
-        1139: {slidesPerView: 2.5},
-        1200: {slidesPerView: 3},
+        954: {slidesPerView: 2},
+        1139: {slidesPerView: 1},
+        1200: {slidesPerView: 2},
 
     },
 
@@ -26,33 +28,34 @@ let reviewsSwiper = new Swiper(".review-swiper", {
 
 });
 
-document.querySelector(".review-swiper").addEventListener("click", (event) => {
-    let swiperWrapper = document.querySelector(".review-swiper .swiper-wrapper");
-    let activeSlide = document.querySelector(".review-swiper .swiper-slide-active");
 
-    let wrapperRect = swiperWrapper.getBoundingClientRect();
-    let clickX = event.clientX;
-    let middleX = wrapperRect.left + wrapperRect.width / 2;
 
-    if (clickX > middleX) {
-        reviewsSwiper.slideNext();
-    } else {
-        reviewsSwiper.slidePrev();
-    }
-});
-
-let aboutSwiper = new Swiper(".about-swiper", {
+let advantagesSwiper = new Swiper(".advantages-swiper", {
     spaceBetween: 20,
-    slidesPerView: 1,
-    loop:true,
+    slidesPerView: 2,
+
+    navigation: {
+        nextEl: '.reviews-slider-prev',
+        prevEl: '.reviews-slider-next',
+    },
     pagination: {
         el: '.swiper-pagination',
+        clickable: true,
+    },
+    breakpoints: {
+        320: {slidesPerView: 1,},
+        540: {slidesPerView: 1,},
+        576: {slidesPerView: 1.2},
+        779: {slidesPerView: 2},
+        954: {slidesPerView: 2},
+        1139: {slidesPerView: 1},
+        1200: {slidesPerView: 2},
+
     },
 
 
 
-
-
-
 });
+
+
 
